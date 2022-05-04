@@ -103,6 +103,7 @@ p {
 
 .social {
   margin-bottom: 2.5rem;
+  cursor: pointer;
 }
 
 .footer {
