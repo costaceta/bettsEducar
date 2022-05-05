@@ -126,6 +126,11 @@ p {
   border-radius: 8px;
   position: relative;
   cursor: pointer;
+  min-height: 76px;
+}
+
+.quiz li:first-child {
+  min-height: 44px;
 }
 
 .quiz li::before {
@@ -173,4 +178,53 @@ p {
   border-radius: 16px;
   font-weight: bold;
   border: none;
+}
+
+
+.quiz label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+.quiz input[type="radio"] {
+  display: none;
+}
+.quiz input[type="radio"]:checked + label {
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+  height: 100%;
+  border-radius: 8px;
+}
+.modal .modal-body {
+  color: #6a5c9a;
+  text-align: center;
+}
+.modal p {
+  color: #444;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.modal h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.modal h3 {
+  font-style: italic;
+}
+.modal .close {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  font-size: 3rem;
+  background: transparent;
+  color: #fff;
+  z-index: 10;
 }
