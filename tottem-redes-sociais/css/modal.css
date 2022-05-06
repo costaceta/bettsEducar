@@ -1,0 +1,44 @@
+iframe{
+    pointer-events: none;
+  }
+
+.posts iframe {
+    width: 240px;
+}
+
+  .container.posts {
+    width: 900px;
+  }
+
+  /* modal */
+
+  .modal-body img {
+    width: 100%;
+  }
+
+  .desc .avatar {
+    float: left;
+    width: 25%;
+  }
+
+  .desc .avatar img {
+    width: 70px;
+    border-radius: 100px;
+  }
+
+  .desc .titulo {
+    float: left;
+    margin-left: 10px;
+    padding-top: 20px;
+  }
+
+  .desc .titulo h3 {
+    font-size: 1.55rem;
+  }
+  .desc .description {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+  }
+
+  /* modal final */
