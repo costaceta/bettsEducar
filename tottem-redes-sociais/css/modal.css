@@ -7,8 +7,15 @@ iframe{
   }
 
 .posts iframe {
-    width: 240px;
+    width: 250px;
 }
+
+.posts .video iframe {
+    width: 400px;
+    margin-top: 10px;
+}
+
+#post4vid{width: 100%;}
 
   .container.posts {
     width: 900px;
