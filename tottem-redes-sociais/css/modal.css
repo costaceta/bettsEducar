@@ -7,13 +7,13 @@ iframe{
   }
 
 .posts iframe {
-    width: 250px;
+    width: 100%;
 }
 
-.posts.blog .card {
+/* .posts.blog .card {
   padding: 0 15px;
   margin-bottom: 30px;
-}
+} */
 
 .posts.blog .card-text, .blogmodal .description, .blogmodal .description p{
   font-family: Helvetica, Arial, sans-serif;
@@ -29,7 +29,7 @@ iframe{
 }
 
 .posts.linkedin iframe{
-  width: 350px;
+  width: 100%;
   margin-top: 10px;
 }
 
