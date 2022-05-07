@@ -2,6 +2,13 @@
     color: #0095f6;
 }
 
+.title-page{
+  text-align: center;
+  color: #67589a;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
 iframe{
     pointer-events: none;
   }
