@@ -15,12 +15,12 @@ iframe{
   margin-bottom: 30px;
 }
 
-.posts.blog .card-text{
+.posts.blog .card-text, .blogmodal .description, .blogmodal .description p{
   font-family: Helvetica, Arial, sans-serif;
   color: #111;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.38;
+  line-height: 1.38rem;
 }
 
 .posts .video iframe {
@@ -75,6 +75,7 @@ iframe{
     float: left;
     padding-top: 20px;
   }
+
 
   .visually-hidden {
       display: none;
