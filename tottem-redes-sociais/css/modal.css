@@ -17,6 +17,11 @@ iframe{
     width: 100%;
 }
 
+.posts .card {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -16px -6px 5px 5px rgba(102,102,102,0); 
+  box-shadow: 0px 10px 13px -7px #000000, -16px -6px 5px 5px rgba(102,102,102,0);
+}
+
 /*New Post blog*/
 
 .card {
