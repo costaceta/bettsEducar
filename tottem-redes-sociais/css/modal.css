@@ -10,10 +10,23 @@ iframe{
     width: 100%;
 }
 
-/* .posts.blog .card {
-  padding: 0 15px;
-  margin-bottom: 30px;
-} */
+/*New Post blog*/
+
+.card {
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.card .card-body{
+  background-color: #0095f6;
+  color: #fff;
+  position: absolute;
+  bottom: -30px;
+  left: 5%;
+  width: 90%;
+}
+
+/*New Post blog Final*/
 
 .posts.blog .card-text, .blogmodal .description, .blogmodal .description p{
   font-family: Helvetica, Arial, sans-serif;

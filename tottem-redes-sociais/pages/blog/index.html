@@ -134,16 +134,13 @@
       const { id, title, content, image, description } = post;
 
       postsOut.innerHTML += `
-        <div class="col-md-4 mb-3" data-toggle="modal" data-target="#post${id}">
+        <div class="col-md-6 mb-3" data-toggle="modal" data-target="#post${id}">
           <div class="card">
             <img
               src="${image}"
               class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${title}</h5>
-              <p class="card-text">
-                ${description}...
-              </p>
             </div>
           </div>
         </div>
@@ -161,24 +158,15 @@
               <div class="modal-body">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-12">
                       <a href="#" target="_blank">
                         <img
                           src="${image}"
                           alt="">
                       </a>
                     </div>
-                    <div class="col-md-5 desc">
-                      <div class="perfil">
-                        <div class="avatar">
-                          <img
-                            src="https://scontent.ffor45-1.fna.fbcdn.net/v/t39.30808-6/277812290_838559777080436_176375656637247688_n.png?_nc_cat=107&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeHLKc48UrV6hpaN-qPRD8UT_EXyXDDFAhD8RfJcMMUCEBPgb-q0sd3VfLbzglpjlyqlayQ3pOGxf4hofem7yZP7&_nc_ohc=f31Xpa3R-N8AX9V_eBy&_nc_ht=scontent.ffor45-1.fna&oh=00_AT9vADpyqzNKnlYddCdCIdKW-NH_MJyhE0Wn1me6ItibZA&oe=6279B98B"
-                            alt="Pleno">
-                        </div>
-                        <div class="titulo">
-                          <h3>Programa Pleno</h3>
-                        </div>
-                      </div>
+                    <div class="col-md-12 desc">
+                      
                       <div class="description">
                         <h2>${title}</h2>
 
@@ -196,6 +184,9 @@
     });
     
   </script>
+
+
+
 
 </body>
 
