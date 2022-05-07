@@ -10,6 +10,19 @@ iframe{
     width: 250px;
 }
 
+.posts.blog .card {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.posts.blog .card-text{
+  font-family: Helvetica, Arial, sans-serif;
+  color: #111;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.38;
+}
+
 .posts .video iframe {
     width: 400px;
     margin-top: 10px;
