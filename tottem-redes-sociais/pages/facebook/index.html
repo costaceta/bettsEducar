@@ -89,6 +89,7 @@
       {
         id: 4,
         image: './images/post4/01.jpg',
+        video: './images/post4/01.mp4',
         description: 'Engajadoras, inovadoras e sintonizadas com o que os jovens querem, o que o <span class="hashtag">#NovoEnsinoMédio</span> exige e o mercado de trabalho espera: essas são as <span class="hashtag">#Eletivas</span> do Programa Pleno! 📱💜 <br><br> ▶ Aperte o play para conhecer as temáticas que vão potencializar o conhecimento dos #estudantes!',
         link: 'https'
       },
@@ -110,7 +111,27 @@
 
     posts.forEach( post => { 
 
-      const { id, image, description, link } = post;
+      function insertVideo (id){
+        const content = document.createElement('div');
+        if(id === 4){
+          return content.innerHTML = `
+
+          <video width="400" height="225" controls="controls">
+          <source src=${video} type="video/mp4">
+          <object data="" width="400" height="225">
+          <embed width="320" height="225" src=${video}>
+          </object>
+          </video>
+
+          `;
+        } else {
+            return content.innerHTML = `
+            <img src="${image}" alt="">
+            `;
+        }
+      }
+
+      const { id, image, description, video, link } = post;
 
       postsOut.innerHTML += `
         <div class="col-md-6 mb-3" data-toggle="modal" data-target="#post${id}">
@@ -135,11 +156,9 @@
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-md-7">
-                      <a href="#" target="_blank">
-                        <img
-                          src="${image}"
-                          alt="">
-                      </a>
+                    
+                    ${insertVideo(id)}
+                    
                     </div>
                     <div class="col-md-5 desc">
                       <div class="perfil">
@@ -161,10 +180,9 @@
           </div>
         </div>
       `;
-    });
-    
-  </script>
+      });
 
+</script>
 
 
 
